@@ -1,0 +1,27 @@
+html, 
+body {
+    height: 100%;   /*or 100vh*/
+}
+img {
+    max-width: 100%;  /*so the img will scale(responsive), and the img's width = card's width(the parent container)*/
+} 
+/*section #cover*/
+#cover {
+    background: #222 url(img/stars.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    height: inherit;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cover-caption {
+    width: 65%;
+}
+.form-inline {
+    display: flex;
+    justify-content: center;
+}
