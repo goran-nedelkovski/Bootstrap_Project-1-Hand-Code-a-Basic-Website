@@ -1,6 +1,6 @@
 html, 
 body {
-    height: 100%;   /*or 100vh*/
+    height: 100%;   /*we did not declared here a global font-size, but because we are useing Bootstrap, then the default global font-size of the browser(and automatically in html/body is 16px(root font-size or root base font), so 1rem=16px default;  */ 
 }
 img {
     max-width: 100%;  /*so the img will scale(responsive), and the img's width = card's width(the parent container)*/
@@ -24,4 +24,27 @@ img {
 .form-inline {
     display: flex;
     justify-content: center;
+}
+.section-content {
+    padding: 5rem 0;  /*80px/16px default of the browser = 5rem*/
+}
+#about {
+    background: url("img/girlincar.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-text {
+    background: rgba(0,0,0,.8);  /*80% transparent ; rgba black-color with 80% transparency to the background-image*/
+    color: white;
+    padding: 1.875rem;  /*30px/16px = 1.875rem*/
+}
+.pagination {
+    justify-content: center;
+}
+#footer-main {
+    background: #222;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 2.5rem 0;  /*40px/16px=2.5rem*/
 }
