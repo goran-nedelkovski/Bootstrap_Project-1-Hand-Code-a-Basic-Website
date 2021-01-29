@@ -15,6 +15,62 @@
 </head>
 
 <body>
+  <!--nav.navbar (copy from getbootstrap->contents->components->navbar;//bg-inverse;navbar-full(for full width of the container without borders))-->
+ <!--add classes: navbar-expand-sm navbar-dark bg-dark navbar-full//and with .navbar-expand-sm, navbar element will be displayed properly from end-to end-->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark navbar-full" id="nav-main">
+  <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" class="d-block img-fluid"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!--change classes to: nabvar-nav mr-auto//margin-right: auto; automatic margin to the right will push right elements to the end-->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#cover">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#carousel">Carousel</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#news">News</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#what-we-do">What we do</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#footer-main">Footer</a>
+      </li>
+
+      <!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li> -->
+      <!-- <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li> -->
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <!--change the class: mr-sm-2 or mr-2-->
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <!--change the class: btn-outline-success-->
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
 <!--Section #cover; //>.cover-caption>.container>.col-sm-12>form.form-inline>(.form-group>label and input) and button.btn.btn-success(green).btn-lg(large)-->
   <section id="cover">
     <div id="cover-caption">
@@ -44,61 +100,6 @@
       </div>
     </div>
   </section>
-<!--nav.navbar (copy from getbootstrap->contents->components->navbar;//bg-inverse;navbar-full(for full width of the container without borders))-->
- <!--add classes: navbar-expand-sm navbar-dark bg-dark navbar-full//and with .navbar-expand-sm, navbar element will be displayed properly from end-to end-->
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark navbar-full" id="nav-main">
-    <a class="navbar-brand" href="#">Your Logo</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <!--change classes to: nabvar-nav mr-auto//margin-right: auto; automatic margin to the right will push right elements to the end-->
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#cover">Home<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#carousel">Carousel</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#news">News</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#what-we-do">What we do</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#footer-main">Footer</a>
-        </li>
-
-        <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li> -->
-        <!-- <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li> -->
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <!--change the class: mr-sm-2 or mr-2-->
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <!--change the class: btn-outline-success-->
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
 <!--Section #carousel (copu from getbootstrap->contents->components->carousel /3 slides with indicators)//carousel-caption(for desrciption of the img)//img has 2 bootstrap classes: d-block(display) and img-fluid(width/max-width:100%)-->
   <section id="carousel">
     <div id="carousel-home" class="carousel slide" data-ride="carousel">
